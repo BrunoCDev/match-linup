@@ -1,0 +1,12 @@
+.container {
+  width: 320px;
+  height: 400px;
+}
+
+.field {
+  width: 320px;
+  height: 320px;
+  background-image: url("./../../assets/images/pitch-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

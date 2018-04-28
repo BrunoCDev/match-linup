@@ -1,19 +1,26 @@
 import React, { Component } from "react";
-import "./index.css";
 
-import infoParser from "./../../components/infoParser/";
+import Formation from "./../../components/Formation/";
+
+import "./index.css";
+import { lineup } from "./utils";
 
 class Home extends Component {
   constructor() {
     super();
+    this.state = {
+      currentSelected: 0
+    };
   }
-  componentDidMount() {
-    infoParser();
-  }
+
   render() {
+    const { currentSelected } = this.state;
+    console.log(lineup);
     return (
       <div className="container">
-        <h1>Match Linup</h1>
+        {lineup.map((el, i) => {
+          return <Formation key={i} data={el} />;
+        })}
       </div>
     );
   }

@@ -1,0 +1,21 @@
+.container {
+  width: 45px;
+  height: 45px;
+  background-image: url("./../../assets/images/player-shirt.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  font-size: 3px;
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 3px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  padding-top: 3px;
+}
