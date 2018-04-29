@@ -1,6 +1,6 @@
-.container {
-  width: 45px;
-  height: 45px;
+.shirt-container {
+  width: 50px;
+  height: 50px;
   background-image: url("./../../assets/images/player-shirt.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -8,14 +8,90 @@
 
 .text-container {
   text-align: center;
-  font-size: 3px;
+  font-size: 3.5px;
+  font-weight: bold;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-right: 3px;
 }
 
 p {
   padding: 0;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 2px;
+}
+
+@media (min-width: 0px) {
+  .shirt-container {
+    width: 20px;
+    height: 20px;
+  }
+  .text-container {
+    font-size: 1.5px;
+    padding-top: 1px;
+    padding-right: 0px;
+  }
+  p {
+    padding-top: 1.5px;
+  }
+}
+
+@media (min-width: 190px) {
+  .shirt-container {
+    width: 29px;
+    height: 29px;
+  }
+  .text-container {
+    font-size: 2px;
+    padding-top: 2.5px;
+    padding-right: 0px;
+  }
+  p {
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: 240px) {
+  .shirt-container {
+    width: 38px;
+    height: 38px;
+  }
+  .text-container {
+    font-size: 3px;
+    padding-top: 2.5px;
+    padding-right: 0px;
+  }
+  p {
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: 300px) {
+  .shirt-container {
+    width: 45px;
+    height: 45px;
+  }
+  .text-container {
+    font-size: 3px;
+    padding-top: 2.5px;
+    padding-right: 0px;
+  }
+  p {
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: 600px) {
+  .shirt-container {
+    width: 80px;
+    height: 80px;
+  }
+  .text-container {
+    font-size: 5px;
+    padding-top: 15px;
+    padding-right: 0px;
+  }
+  p {
+    padding-top: 2px;
+  }
 }

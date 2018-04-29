@@ -5,10 +5,16 @@ import shirt from "./../../assets/images/player-shirt.png";
 
 class Shirt extends Component {
   render() {
-    const { data } = this.props;
+    const { data, index } = this.props;
     return (
-      <div className="container">
-        <div className="text-container">
+      <div
+        className="shirt-container"
+        style={index % 2 !== 0 ? { marginLeft: 20, marginRight: 20 } : null}
+      >
+        <div
+          className="text-container"
+          title={`${data.formation_place} - ${data.name}`}
+        >
           <p>{data.name}</p>
           <p>{data.formation_place}</p>
           <p>{data.type}</p>
